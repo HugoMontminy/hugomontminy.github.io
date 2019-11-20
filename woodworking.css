@@ -1,0 +1,219 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    background-image: url(/home/hugo/Desktop/Woodworking/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.705);
+    background-repeat: repeat;
+    background-position: top;
+    background-size: auto;
+    position:  fixed;
+    z-index: 9999;
+    padding-bottom: 10px;
+    width:100%;
+    border-bottom: 3px solid black;
+}
+
+   
+
+header nav .menu {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin-top: 130px;
+    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.dropdown a {
+    display: grid;
+    font-family: "Ropa sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links {
+    padding-top: 25px;
+    padding-right: 25px;
+
+}
+
+.links a {
+    text-decoration: none;
+    align-content: center;
+    color: black;
+    font-family: "Ropa sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 50px 25px 0 25px;    
+}
+
+.links :hover {
+    border-bottom: 1px solid black;    
+} 
+
+h1 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 2rem;
+    font-family: "Cinzel", serif;
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 1rem;
+    font-family: "Ropa sans", sans-serif;
+    font-weight: lighter;
+}
+
+.banner {
+    background-color: transparent;
+    height: 600px;
+    
+}
+
+.portfolios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.836);
+}   
+
+.one {
+    background-image: url("/home/hugo/Desktop/Woodworking/portfolio1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.two, .four, .five, .seven, .ten, .twelve {
+    background-color: white;
+    background-size: cover;
+    height: 400px;
+}
+.three {
+    background-image: url("/home/hugo/Desktop/Woodworking/portfolio8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.six {
+    background-image: url("/home/hugo/Desktop/Woodworking/portfolio3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.eight {
+    background-image: url("/home/hugo/Desktop/Woodworking/portfolio4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.nine {
+    background-image: url("/home/hugo/Desktop/Woodworking/portfolio6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.eleven{
+    background-image: url("/home/hugo/Desktop/Woodworking/portfolio9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px; 
+}
+
+footer {
+    background-color: rgba(240, 238, 238, 0.849);
+    background-position: bottom;
+    background-size: auto;
+    background-attachment: scroll;
+    padding: 15px;
+}
+
+.two, .four, .five, .seven, .ten, .twelve  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 1.5rem;
+    
+}
+
+.portfolios div:hover {
+    border-color: rgb(61, 59, 59);
+    border-style: solid;
+    border-width: 15px;
+    border-image-repeat: stretch;
+}    
+    
+@media screen and (max-width: 1000px) {
+    
+    .portfolios {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .links {
+        display: none;
+    }
+
+    header nav .menu {
+        display: block;
+        padding: 0px;
+        margin: 60px 70px 0px 0px;
+        border: 2px solid black;  
+    }
+  
+    .menu:hover {
+        background-color: darkgrey;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown a:hover {
+        border-bottom: 2px solid black;
+    }

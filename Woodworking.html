@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Woodworking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="woodworking.css">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+            </style> 
+</head>
+<body>
+    
+    <header>
+        <nav>   
+            <h1>W. Thompson</h1>
+            <i class="menu" onclick="menu()">menu</i>
+        <div class="links">
+                <a class="nav-item" href="file:///home/hugo/Desktop/Woodworking/Woodworking.html">Home</a>
+                <a class="nav-item" href="Aboutme.html">About me</a>
+                <a class="nav-item" href="Online-store.html">Online store</a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.etsy.com"><i class="fa fa-etsy"></i></a>
+            </div>       
+            <div class="dropdown">
+                <a class="nav-item" href="file:///home/hugo/Desktop/Woodworking/Woodworking.html">Home</a>
+                <a class="nav-item" href="Aboutme.html">About me</a>
+                <a class="nav-item" href="Online-store.html">Online store</a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.etsy.com"><i class="fa fa-etsy"></i></a>
+            </div>
+        
+        </nav>
+        <h3>Cabinet Maker</h3> 
+    </header>
+        
+    <div class="banner"></div>
+    <div class="portfolios">
+        <div class="one"></div>
+        <div class="two">Maple side table</div>
+        <div class="three"></div>
+        <div class="four">Mahogany side table</div>
+        <div class="five">Hickory desk</div>
+        <div class="six"></div>
+        <div class="seven">Oak side table</div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten">Pine bedroom drawer</div>
+        <div class="eleven"></div>
+        <div class="twelve">Cherry built-in shelves</div>       
+    </div>
+
+    <footer>
+        <p>Designed and developed by Hugo Montminy</p>
+        <p>&copy; William Thompson</p>
+    </footer>
+    
+</body>
+
+<script>
+        var dropdown = document.querySelector("nav .dropdown");
+    var button = document.querySelector("button");
+    function menu() {
+        if (dropdown.style.display === "grid") {
+            dropdown.style.display = "none";
+            button.innerHTML = "menu";
+        } else {
+            dropdown.style.display = "grid";
+            button.innerHTML = "close";
+    }
+    }
+    
+    addEventListener("resize", function () {
+    if (window.innerWidth > 800)  {
+        dropdown.style.display = "none";
+        button.innerHTML = "menu";
+    }
+    }
+    )
+    </script>
+</html>
